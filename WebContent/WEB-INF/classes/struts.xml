@@ -8,7 +8,7 @@
 	
 	<package name="helloworld" extends="struts-default">
 		
-		<action name="loginaction" class="com.ashish.struts2.LoginAction" method="execute">
+		<action name="emailer" class="com.ashish.struts2.Emailer" method="execute">
 			<result name="success">/success.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>

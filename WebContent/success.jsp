@@ -1,13 +1,15 @@
-<%@ page contentType = "text/html; charset = UTF-8" %>
-<%@ taglib prefix = "s" uri = "/struts-tags" %>
+<%@ page language = "java" contentType = "text/html; charset = ISO-8859-1"
+   pageEncoding = "ISO-8859-1"%>
+<%@ taglib prefix = "s" uri = "/struts-tags"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+   "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
    <head>
-      <title>Successful Login</title>
+      <title>Email Success</title>
    </head>
    
    <body>
-      <font color="green">Login Success!</font>     
-      Hello World, <s:property value = "name"/>
+      Your email to <s:property value = "to"/> was sent successfully.
    </body>
 </html>
