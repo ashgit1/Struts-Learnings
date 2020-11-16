@@ -8,23 +8,16 @@
 
 	<package name="helloworld" extends="struts-default">
 
-		<interceptors>
-			<interceptor name="myinterceptor"
-				class="com.ashish.struts2.MyInterceptor" />
-		</interceptors>
+		<action name="hello" class="com.ashish.struts2.HelloWorldAction" method="execute">
 
-		<action name="index">
-			<result>/index.jsp</result>
-		</action>
-
-		<action name="hello"
-			class="com.ashish.struts2.HelloWorldAction" method="execute">
-
-			<interceptor-ref name="params" />
-			<interceptor-ref name="myinterceptor" />
-
-			<result name="success">/HelloWorld.jsp</result>
-			<result name="error">/AccessDenied.jsp</result>
+			<result name="success" type="freemarker">
+				<param name="location">/hello.fm</param>
+			</result>
+			
+			<result name="error" type="redirect">
+				<param name="location">/AccessDenied.jsp</param>
+			</result>
+			
 		</action>
 
 	</package>

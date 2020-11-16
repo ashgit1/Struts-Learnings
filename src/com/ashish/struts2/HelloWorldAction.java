@@ -17,9 +17,13 @@ public class HelloWorldAction extends ActionSupport {
 
 	public String execute() throws Exception {
 
-		System.out.println("Inside action....");
-		return "success";
+		System.out.println("Inside action --> " + name);
 
+		if (name.equalsIgnoreCase("error")) {
+			return "error";
+		} else {
+			return "success";
+		}
 	}
 
 }
