@@ -10,6 +10,6 @@
    </head>
    
    <body>
-      There is a problem sending your email to <s:property value = "to"/>.
+     <font color="red">There is a problem sending your email to </font><s:property value = "to"/>.
    </body>
 </html>

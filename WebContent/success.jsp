@@ -10,6 +10,6 @@
    </head>
    
    <body>
-      Your email to <s:property value = "to"/> was sent successfully.
+      <font color="green">Your email to </font><s:property value = "to"/> <font color="green"> was sent successfully.</font>
    </body>
 </html>
