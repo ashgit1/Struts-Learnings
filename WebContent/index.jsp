@@ -6,14 +6,14 @@
 
 <html>
    <head>
-      <title>File Upload</title>
+      <title>Login</title>
    </head>
    
    <body>
-      <form action = "upload" method = "post" enctype = "multipart/form-data">
-         <label for = "MyFile">Upload your file</label>
-         <input type = "file" name = "myFile" />
-         <input type = "submit" value = "Upload"/>
+      <form action = "loginaction" method = "post">
+         User:<br/><input type = "text" name = "user"/><br/>
+         Password:<br/><input type = "password" name = "password"/><br/>
+         <input type = "submit" value = "Login"/>		
       </form>
    </body>
 </html>

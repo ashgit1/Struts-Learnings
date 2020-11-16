@@ -3,11 +3,10 @@
 
 <html>
    <head>
-      <title>File Upload Error</title>
+      <title>Invalid User Name or Password</title>
    </head>
    
    <body>
-      <font color="red">There has been an error in uploading the file!</font>
-      <a href="index.jsp">Back to Home Page</a>
+	<font color="red"> Wrong user name or password provided!</font>     
    </body>
 </html>

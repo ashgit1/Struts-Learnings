@@ -3,11 +3,11 @@
 
 <html>
    <head>
-      <title>File Upload Success</title>
+      <title>Successful Login</title>
    </head>
    
    <body>
-      You have successfully uploaded <s:property value = "myFileFileName"/>
-      <a href="index.jsp">Back to Home Page</a>
+      <font color="green">Login Success!</font>     
+      Hello World, <s:property value = "name"/>
    </body>
 </html>
