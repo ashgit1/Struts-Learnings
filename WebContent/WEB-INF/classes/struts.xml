@@ -5,18 +5,11 @@
 
 <struts>
 	<constant name="struts.devMode" value="true" />
-
+	<constant name="struts.multipart.maxSize" value="1000000" />
 	<package name="helloworld" extends="struts-default">
-
-		<action name="hello" class="com.ashish.struts2.HelloWorldAction" method="execute">
-
-			<result name = "success">/HelloWorld.jsp</result>
-			
-			<result name="error" type="redirect">
-				<param name="location">/AccessDenied.jsp</param>
-			</result>
-			
+		<action name="upload" class="com.ashish.struts2.uploadFile" method="execute">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
 		</action>
-
 	</package>
 </struts>
