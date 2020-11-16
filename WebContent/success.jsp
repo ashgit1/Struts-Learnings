@@ -6,10 +6,13 @@
 
 <html>
    <head>
-      <title>Email Success</title>
+      <title>Success</title>
    </head>
    
    <body>
-      <font color="green">Your email to </font><s:property value = "to"/> <font color="green"> was sent successfully.</font>
+      <font color="green">Employee Information is captured successfully!</font><br>
+      Name : <s:property value = "name" /><br/>
+      Age : <s:property value = "age" /> <br/>
+      <a href="index.jsp">Back to Home Page</a>
    </body>
 </html>

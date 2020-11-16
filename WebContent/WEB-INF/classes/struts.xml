@@ -8,7 +8,9 @@
 	
 	<package name="helloworld" extends="struts-default">
 		
-		<action name="emailer" class="com.ashish.struts2.Emailer" method="execute">
+		<action name="empinfo" class="com.ashish.struts2.Employee" method="execute">
+			<!-- To handle the return value of input we need to add the following result to our action node in struts.xml. -->
+			<result name="input">/index.jsp</result>
 			<result name="success">/success.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
