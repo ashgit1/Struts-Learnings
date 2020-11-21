@@ -6,10 +6,10 @@
 
 <html>
    <head>
-      <title>Success</title>
+      <title></title>
    </head>
    
    <body>
-      <s:property value = "getText('global.success')" />
+      <h2><font color="red">This is NullPointer Exception Page!</font></h2>
    </body>
 </html>

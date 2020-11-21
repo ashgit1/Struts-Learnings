@@ -5,21 +5,16 @@
 
 <struts>
 	<constant name="struts.devMode" value="true" />
-	<constant name = "struts.custom.i18n.resources" value = "global" />
-	
 	<package name="helloworld" extends="struts-default" namespace="/">
 		
-		<action name="empinfo" class="com.ashish.struts2.Employee" method="execute">
-			<!-- To handle the return value of input we need to add the following result to our action node in struts.xml. -->
-			<result name="input">/index.jsp</result>
-			<result name="success">/success.jsp</result>
-			<result name="error">/error.jsp</result>
-		</action>
-		
-		<action name = "locale"  class = "com.ashish.struts2.Locale"  method = "execute">
-         <result name = "success">/index.jsp</result>
-      </action>
-		
-	</package>
+		<global-exception-mappings>
+			<exception-mapping result="nullPointerException" exception="java.lang.NullPointerException"/>
+		</global-exception-mappings>
 	
+		<action name="hello" class="com.ashish.struts2.HelloWorldAction" method="execute">
+			<result name="success">/HelloWorld.jsp</result>
+			<result name="nullPointerException">/npe.jsp</result>
+		</action>
+	
+	</package>
 </struts>
